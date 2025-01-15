@@ -151,7 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78dd8cc551810c49952f7679644b334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy: {fileID: 8050796892366717823, guid: 150d0af32e86bba4fb306897d7ba2f40, type: 3}
+  enemyPrefab: {fileID: 8050796892366717823, guid: 150d0af32e86bba4fb306897d7ba2f40, type: 3}
+  spawnRate: 1
 --- !u!4 &61974820
 Transform:
   m_ObjectHideFlags: 0
@@ -237,7 +238,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0423\u0431\u0438\u0432\u0430\u0439 \u0444\u0443\u0440\u0440\u0438 \u043F\u043E\u0440\u043D\u043E"
+  m_Text: 
 --- !u!222 &187281184
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -280,7 +281,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4286677, y: 0.8091865}
   m_AnchorMax: {x: 1, y: 0.9053698}
-  m_AnchoredPosition: {x: -0.33999634, y: 5}
+  m_AnchoredPosition: {x: -0.34002686, y: 5}
   m_SizeDelta: {x: 0.6999512, y: -14.906006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &343690575
@@ -578,7 +579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.000061035156}
+  m_AnchoredPosition: {x: -0.00012207031, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678686438
@@ -727,10 +728,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4af0ab809b800468906fc678a50c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreText: {fileID: 343690575}
-  Speed: 0.05
-  Bullet: {fileID: 1179243235463144878, guid: 55b7887c6f851274e99a5dea054d3f7a, type: 3}
-  Score: 0
+  moveSpeed: 0.01
+  bulletPrefab: {fileID: 1179243235463144878, guid: 55b7887c6f851274e99a5dea054d3f7a, type: 3}
+  fireRate: 0.2
 --- !u!4 &1174763766
 Transform:
   m_ObjectHideFlags: 0
